@@ -1,20 +1,380 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<mg-modal-view></mg-modal-view>
+<div class="content-frame">
+  <div class="style-content">
+    <div class="section-title">
+      STYLE GUIDE
+    </div>
+    <h1>Reserved words</h1>
+    <p> All components are implemented with "base" style, and they change styling including colour by adding any of the
+      reserved words.
 
+      If you modify a style with any of those reserved words, it may affect the look and feel of a component. This
+      is intentional because it allows for shared global level custom styles
+    </p>
+    <ul>
+      <li>info</li>
+      <li>error</li>
+      <li>warning</li>
+      <li>default</li>
+      <li>base</li>
+      <li>success</li>
+      <li>highlight</li>
+      <li>alert</li>
+    </ul>
+
+
+    <div class="section-title">
+      Text styles
+    </div>
+    <h1>Primary font</h1>
+    <h2>Regular text</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.
+    </div>
+    <h2>Fine</h2>
+    <div class="fine">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.
+    </div>
+    <h2>Strong</h2>
+    <div>
+      <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam
+        tincidunt eu
+        mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+        egestas.
+        Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+        velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+        pharetra vestibulum quis at augue.</strong>
+    </div>
+    <h2>Emphasis</h2>
+    <div class="emphasis">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam
+      tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.
+    </div>
+    <h2>Quote</h2>
+    <div class="quote">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam
+      tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.
+    </div>
+    <h2>Title</h2>
+    <div class="title">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.
+    </div>
+    <h2>Subtitle</h2>
+    <div class="subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.
+    </div>
+    <h2>Label</h2>
+    <div class="label">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.
+    </div>
+    <h2>Bold</h2>
+    <div><b>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.</b>
+    </div>
+
+    <h1>H1</h1>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.</h1>
+    <h2>H2</h2>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.</h2>
+    <h3>H3</h3>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.</h3>
+    <h4>H4</h4>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam tincidunt eu
+      mauris eu fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse erat velit, elementum vitae mattis non, facilisis fringilla arcu. Nulla eu magna fringilla, blandit
+      velit nec, hendrerit ligula. Curabitur congue diam nec sem tincidunt viverra. Pellentesque eu lectus sed lorem
+      pharetra vestibulum quis at augue.</h4>
+    <div class="section-title">
+      Colors
+    </div>
+
+
+    <div class="color-box normal-darkest">
+      color-normal-darkest
+    </div>
+    <div class="color-box normal-dark">
+      color-normal-dark
+    </div>
+    <div class="color-box normal">
+      color-normal
+    </div>
+    <div class="color-box normal-light">
+      color-normal-light
+    </div>
+    <div class="color-box normal-lightest">
+      color-normal-lightest
+    </div>
+
+
+    <div class="color-box base-darkest">
+      color-base-darkest
+    </div>
+    <div class="color-box base-dark">
+      color-base-dark
+    </div>
+    <div class="color-box base">
+      color-base
+    </div>
+    <div class="color-box base-light">
+      color-base-light
+    </div>
+    <div class="color-box base-lightest">
+      color-base-lightest
+    </div>
+
+
+    <div class="color-box success-darkest">
+      color-success-darkest
+    </div>
+    <div class="color-box success-dark">
+      color-success-dark
+    </div>
+    <div class="color-box success">
+      color-success
+    </div>
+    <div class="color-box success-light">
+      color-success-light
+    </div>
+    <div class="color-box success-lightest">
+      color-success-lightest
+    </div>
+
+
+    <div class="color-box warning-darkest">
+      color-warning-darkest
+    </div>
+    <div class="color-box warning-dark">
+      color-warning-dark
+    </div>
+    <div class="color-box warning">
+      color-warning
+    </div>
+    <div class="color-box warning-light">
+      color-warning-light
+    </div>
+    <div class="color-box warning-lightest">
+      color-warning-lightest
+    </div>
+
+
+    <div class="color-box error-darkest">
+      color-error-darkest
+    </div>
+    <div class="color-box error-dark">
+      color-error-dark
+    </div>
+    <div class="color-box error">
+      color-error
+    </div>
+    <div class="color-box error-light">
+      color-error-light
+    </div>
+    <div class="color-box error-lightest">
+      color-error-lightest
+    </div>
+
+
+    <div class="color-box default-darkest">
+      color-default-darkest
+    </div>
+    <div class="color-box default-dark">
+      color-default-dark
+    </div>
+    <div class="color-box default">
+      color-default
+    </div>
+    <div class="color-box default-light">
+      color-default-light
+    </div>
+    <div class="color-box default-lightest">
+      color-default-lightest
+    </div>
+
+
+    <div class="color-box highlight-darkest">
+      color-highlight-darkest
+    </div>
+    <div class="color-box highlight-dark">
+      color-highlight-dark
+    </div>
+    <div class="color-box highlight">
+      color-highlight
+    </div>
+    <div class="color-box highlight-light">
+      color-highlight-light
+    </div>
+    <div class="color-box highlight-lightest">
+      color-highlight-lightest
+    </div>
+
+
+    <div class="color-box alert-darkest">
+      color-alert-darkest
+    </div>
+    <div class="color-box alert-dark">
+      color-alert-dark
+    </div>
+    <div class="color-box alert">
+      color-alert
+    </div>
+    <div class="color-box alert-light">
+      color-alert-light
+    </div>
+    <div class="color-box alert-lightest">
+      color-alert-lightest
+    </div>
+
+
+    <div class="section-title">
+      Forms
+    </div>
+
+    <h1>Buttons</h1>
+
+    <div class="row">
+      <mg-button>Base button</mg-button> &lt;mg-button>Base button&lt;/mg-button>
+    </div>
+    <!--<div class="row">-->
+      <!--<mg-button class="default">Default button</mg-button> &lt;mg-button class="default">Default button&lt;/mg-button>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<mg-button class="success">Success button</mg-button> &lt;mg-button class="success">Success button&lt;/mg-button>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<mg-button class="warning">Warning button</mg-button> &lt;mg-button class="warning">Warning button&lt;/mg-button>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<mg-button class="error">Error button</mg-button> &lt;mg-button class="error">Error button&lt;/mg-button>-->
+    <!--</div>-->
+
+    <h1>Input components</h1>
+    <div class="row">
+      <h3>Text input</h3>
+      <div class="input-container">
+        <mg-input placeholder="Please enter some text"></mg-input>
+      </div>
+      <h4>Example</h4>
+      &lt;mg-input placeholder="Please enter some text">&lt;/mg-input>
+    </div>
+
+    <div class="row">
+      <h3>Password input</h3>
+      <div class="input-container">
+        <mg-input type="password" placeholder="Enter your password"></mg-input>
+      </div>
+      <h4>Example</h4>
+      &lt;mg-input type="password" placeholder="Enter your password">&lt;/mg-input>
+    </div>
+
+    <h3>Select</h3>
+    <mg-select></mg-select>
+
+    <h3>Text editor</h3>
+    <h3>Inline text editor</h3>
+
+    <div class="section-title">
+      Navigation
+    </div>
+    <h1>Nav bar</h1>
+    <h1>Button bar</h1>
+
+    <div class="section-title">
+      Notifications
+    </div>
+    <h1>Boxes</h1>
+    <h3>Info box</h3>
+    <div class="row">
+      <div class="input-container">
+        <div class="mg-info-box">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam
+          tincidunt eu
+        </div>
+        Usage: &lt;div class="mg-info-box">
+      </div>
+    </div>
+    <h3>Warning box</h3>
+    <div class="row">
+      <div class="input-container">
+        <div class="mg-info-box warning">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam
+          tincidunt eu
+        </div>
+        Usage: &lt;div class="mg-info-box warning">
+      </div>
+    </div>
+    <h3>Error box</h3>
+    <div class="row">
+      <div class="input-container">
+        <div class="mg-info-box error">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam
+          tincidunt eu
+        </div>
+        Usage: &lt;div class="mg-info-box error">
+      </div>
+    </div>
+    <h3>Highlight box</h3>
+    <div class="row">
+      <div class="input-container">
+        <div class="mg-info-box highlight">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam
+          tincidunt eu
+        </div>
+        Usage: &lt;div class="mg-info-box highlight">
+      </div>
+    </div>
+    <h3>Alert box</h3>
+    <div class="row">
+      <div class="input-container">
+        <div class="mg-info-box alert">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt commodo aliquam. Aliquam
+          tincidunt eu
+        </div>
+        Usage: &lt;div class="mg-info-box alert">
+      </div>
+    </div>
+  </div>
+</div>

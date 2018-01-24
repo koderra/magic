@@ -1,0 +1,27 @@
+.mg-info-box {
+  display: block;
+  width: calc(100% - 24px);
+  padding: 10px;
+  background-color: #eee;
+  border: 2px solid #bebebe;
+  color: #333;
+}
+.mg-info-box.warning {
+  background-color: #ffa500;
+  border: 2px solid #cc8400;
+  color: #fff;
+}
+.mg-info-box.danger {
+  background-color: #ff4500;
+  border: 2px solid #cc3700;
+  color: #fff;
+}
+.mg-info-box.highlight {
+  background-color: #fff2e4;
+  border: 2px solid #ffc383;
+}
+.mg-info-box.alert {
+  background-color: #d858bd;
+  border: 2px solid #c52ea5;
+  color: #fff;
+}

@@ -1,0 +1,312 @@
+// Colors
+// ============================================
+
+$color-default = #3ba2d8
+$color-default-light = #7ec4ff
+$color-default-lightest = #a7deff
+
+// Typography
+// ============================================
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,400,900');
+//font-family: 'Work Sans', sans-serif;
+primary-font-family = 'Work Sans', sans-serif;
+primary-font-size = 14px
+
+.emphasis
+  font-size 1em
+
+.quote
+  font-size 20px
+  font-style italic
+  color #aaaaaa
+
+.title
+  font-size 40px
+//font-weight 400
+//text-transform uppercase
+
+.subtitle
+  font-size 30px
+//font-weight 400
+//text-transform uppercase
+
+.label
+  font-weight 400
+  text-decoration underline
+
+label
+  font-weight 400
+  text-decoration underline
+
+.fine
+  font-size 0.8em
+
+.strong
+  font-weight 400
+
+strong
+  font-weight 400
+
+// Base sizes
+// ============================================
+
+$mg-navbar-height = 50px
+$button-border = 0
+
+/// other stuff
+
+//$button-border-color = red
+//$color-base := purple
+
+// Base styles
+// ============================================
+
+body, html
+  width 100%
+  height 100%
+  margin 0
+  padding 0
+  font-family primary-font-family
+  font-size primary-font-size
+  font-weight 300
+  letter-spacing 0.5px
+  color #444444
+
+  *:focus
+    outline: none
+
+input, textarea, button
+  font-family primary-font-family
+  font-size primary-font-size
+  font-weight 300
+
+.center
+  text-align center
+
+
+// ============================================
+// Style guide specific
+// ============================================
+
+
+.section-title
+  color orangered
+  font-size 50px
+  margin-top 20px
+
+.section-subtitle
+  color orangered
+  font-size 30px
+
+.frame
+  width 100%
+  min-height 100%
+  margin-top $mg-navbar-height
+
+//background orangered
+
+.content-frame
+  width 70%
+  margin auto
+  overflow hidden
+  margin-bottom 100px
+
+  @media screen and (max-width: 1412px) {
+    width 85%
+  }
+
+  @media screen and (max-width: 1369px) {
+    width 90%
+  }
+
+  @media screen and (max-width: 1217px) {
+    width 95%
+  }
+
+  @media screen and (max-width: 576px) {
+    width calc(100% - 10px)
+  }
+
+  @media screen and (max-width: 400px) {
+    width 100%
+  }
+
+  .optional
+    @media screen and (max-width: 750px) {
+      display none
+    }
+
+  .desktop .desktop-hide
+    display none
+
+  .mobile .mobile-hide
+    display none
+
+
+  .row
+    width 100%
+    display block
+    float left
+    margin-top 10px
+    margin-bottom 10px
+
+  .color-box
+    width calc(20% - 10px)
+    height 2em
+    line-height 2em
+    display block
+    float left
+    margin-top 10px
+    margin-bottom 10px
+    font-size 1.3em
+    padding-left 10px
+
+  .input-container
+    width 300px
+
+  .color-box.normal
+    color white
+    background-color color-normal
+
+  .color-box.normal-dark
+    color white
+    background-color color-normal-dark
+
+  .color-box.normal-light
+    color white
+    background-color color-normal-light
+
+  .color-box.normal-darkest
+    color white
+    background-color color-normal-darkest
+
+  .color-box.normal-lightest
+    color white
+    background-color color-normal-lightest
+
+
+
+  .color-box.base
+    background-color color-base
+
+  .color-box.base-dark
+    background-color color-base-dark
+
+  .color-box.base-light
+    background-color color-base-light
+
+  .color-box.base-darkest
+    background-color color-base-darkest
+
+  .color-box.base-lightest
+    background-color color-base-lightest
+
+
+
+
+  .color-box.success
+    background-color $color-success
+
+  .color-box.success-dark
+    background-color $color-success-dark
+
+  .color-box.success-light
+    background-color $color-success-light
+
+  .color-box.success-darkest
+    background-color $color-success-darkest
+
+  .color-box.success-lightest
+    background-color $color-success-lightest
+
+
+
+
+  .color-box.warning
+    background-color color-warning
+
+  .color-box.warning-dark
+    background-color color-warning-dark
+
+  .color-box.warning-light
+    background-color color-warning-light
+
+  .color-box.warning-darkest
+    background-color color-warning-darkest
+
+  .color-box.warning-lightest
+    background-color color-warning-lightest
+
+
+
+
+
+  .color-box.error
+    background-color color-error
+
+  .color-box.error-dark
+    background-color color-error-dark
+
+  .color-box.error-light
+    background-color color-error-light
+
+  .color-box.error-darkest
+    background-color color-error-darkest
+
+  .color-box.error-lightest
+    background-color color-error-lightest
+
+
+
+
+  .color-box.default
+    background-color $color-default
+
+  .color-box.default-dark
+    background-color $color-default-dark
+
+  .color-box.default-light
+    background-color $color-default-light
+
+  .color-box.default-darkest
+    background-color $color-default-darkest
+
+  .color-box.default-lightest
+    background-color $color-default-lightest
+
+
+
+  .color-box.highlight
+    background-color color-highlight
+
+  .color-box.highlight-dark
+    background-color color-highlight-dark
+
+  .color-box.highlight-light
+    background-color color-highlight-light
+
+  .color-box.highlight-darkest
+    background-color color-highlight-darkest
+
+  .color-box.highlight-lightest
+    background-color color-highlight-lightest
+
+
+
+  .color-box.alert
+    background-color color-alert
+
+  .color-box.alert-dark
+    background-color color-alert-dark
+
+  .color-box.alert-light
+    background-color color-alert-light
+
+  .color-box.alert-darkest
+    background-color color-alert-darkest
+
+  .color-box.alert-lightest
+    background-color color-alert-lightest
+
+

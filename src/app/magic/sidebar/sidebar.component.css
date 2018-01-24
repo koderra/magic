@@ -2,26 +2,26 @@
   display: block;
   width: calc(100% - 24px);
   padding: 10px;
-  background-color: $color-base;
-  border: 2px solid $color-base-dark;
-  color: $color-base-reverse;
+  background-color: #eee;
+  border: 2px solid #bebebe;
+  color: #333;
 }
 .mg-info-box.warning {
-  background-color: $color-warning;
-  border: 2px solid $color-warning-dark;
-  color: $color-warning-reverse;
+  background-color: #ffa500;
+  border: 2px solid #cc8400;
+  color: #fff;
 }
 .mg-info-box.danger {
-  background-color: $color-danger;
-  border: 2px solid $color-danger-dark;
-  color: $color-danger-reverse;
+  background-color: #ff4500;
+  border: 2px solid #cc3700;
+  color: #fff;
 }
 .mg-info-box.highlight {
-  background-color: $color-highlight;
-  border: 2px solid $color-highlight-dark;
+  background-color: #fff2e4;
+  border: 2px solid #ffc383;
 }
 .mg-info-box.alert {
-  background-color: $color-alert;
-  border: 2px solid $color-alert-dark;
-  color: $color-alert-reverse;
+  background-color: #d858bd;
+  border: 2px solid #c52ea5;
+  color: #fff;
 }

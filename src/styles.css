@@ -1,1 +1,260 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200,400,900");
+.emphasis {
+  font-size: 1em;
+}
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  color: #aaa;
+}
+.title {
+  font-size: 40px;
+}
+.subtitle {
+  font-size: 30px;
+}
+.label {
+  font-weight: 400;
+  text-decoration: underline;
+}
+label {
+  font-weight: 400;
+  text-decoration: underline;
+}
+.fine {
+  font-size: 0.8em;
+}
+.strong {
+  font-weight: 400;
+}
+strong {
+  font-weight: 400;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #444;
+}
+body *:focus,
+html *:focus {
+  outline: none;
+}
+input,
+textarea,
+button {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.center {
+  text-align: center;
+}
+.section-title {
+  color: #ff4500;
+  font-size: 50px;
+  margin-top: 20px;
+}
+.section-subtitle {
+  color: #ff4500;
+  font-size: 30px;
+}
+.frame {
+  width: 100%;
+  min-height: 100%;
+  margin-top: 50px;
+}
+.content-frame {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1412px) {
+  .content-frame {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1369px) {
+  .content-frame {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1217px) {
+  .content-frame {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content-frame {
+    width: calc(100% - 10px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .content-frame {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .content-frame .optional {
+    display: none;
+  }
+}
+.content-frame .desktop .desktop-hide {
+  display: none;
+}
+.content-frame .mobile .mobile-hide {
+  display: none;
+}
+.content-frame .row {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content-frame .color-box {
+  width: calc(20% - 10px);
+  height: 2em;
+  line-height: 2em;
+  display: block;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  padding-left: 10px;
+}
+.content-frame .input-container {
+  width: 300px;
+}
+.content-frame .color-box.normal {
+  color: #fff;
+  background-color: color-normal;
+}
+.content-frame .color-box.normal-dark {
+  color: #fff;
+  background-color: color-normal-dark;
+}
+.content-frame .color-box.normal-light {
+  color: #fff;
+  background-color: color-normal-light;
+}
+.content-frame .color-box.normal-darkest {
+  color: #fff;
+  background-color: color-normal-darkest;
+}
+.content-frame .color-box.normal-lightest {
+  color: #fff;
+  background-color: color-normal-lightest;
+}
+.content-frame .color-box.base {
+  background-color: color-base;
+}
+.content-frame .color-box.base-dark {
+  background-color: color-base-dark;
+}
+.content-frame .color-box.base-light {
+  background-color: color-base-light;
+}
+.content-frame .color-box.base-darkest {
+  background-color: color-base-darkest;
+}
+.content-frame .color-box.base-lightest {
+  background-color: color-base-lightest;
+}
+.content-frame .color-box.success {
+  background-color: $color-success;
+}
+.content-frame .color-box.success-dark {
+  background-color: $color-success-dark;
+}
+.content-frame .color-box.success-light {
+  background-color: $color-success-light;
+}
+.content-frame .color-box.success-darkest {
+  background-color: $color-success-darkest;
+}
+.content-frame .color-box.success-lightest {
+  background-color: $color-success-lightest;
+}
+.content-frame .color-box.warning {
+  background-color: color-warning;
+}
+.content-frame .color-box.warning-dark {
+  background-color: color-warning-dark;
+}
+.content-frame .color-box.warning-light {
+  background-color: color-warning-light;
+}
+.content-frame .color-box.warning-darkest {
+  background-color: color-warning-darkest;
+}
+.content-frame .color-box.warning-lightest {
+  background-color: color-warning-lightest;
+}
+.content-frame .color-box.error {
+  background-color: color-error;
+}
+.content-frame .color-box.error-dark {
+  background-color: color-error-dark;
+}
+.content-frame .color-box.error-light {
+  background-color: color-error-light;
+}
+.content-frame .color-box.error-darkest {
+  background-color: color-error-darkest;
+}
+.content-frame .color-box.error-lightest {
+  background-color: color-error-lightest;
+}
+.content-frame .color-box.default {
+  background-color: #3ba2d8;
+}
+.content-frame .color-box.default-dark {
+  background-color: $color-default-dark;
+}
+.content-frame .color-box.default-light {
+  background-color: #7ec4ff;
+}
+.content-frame .color-box.default-darkest {
+  background-color: $color-default-darkest;
+}
+.content-frame .color-box.default-lightest {
+  background-color: #a7deff;
+}
+.content-frame .color-box.highlight {
+  background-color: color-highlight;
+}
+.content-frame .color-box.highlight-dark {
+  background-color: color-highlight-dark;
+}
+.content-frame .color-box.highlight-light {
+  background-color: color-highlight-light;
+}
+.content-frame .color-box.highlight-darkest {
+  background-color: color-highlight-darkest;
+}
+.content-frame .color-box.highlight-lightest {
+  background-color: color-highlight-lightest;
+}
+.content-frame .color-box.alert {
+  background-color: color-alert;
+}
+.content-frame .color-box.alert-dark {
+  background-color: color-alert-dark;
+}
+.content-frame .color-box.alert-light {
+  background-color: color-alert-light;
+}
+.content-frame .color-box.alert-darkest {
+  background-color: color-alert-darkest;
+}
+.content-frame .color-box.alert-lightest {
+  background-color: color-alert-lightest;
+}

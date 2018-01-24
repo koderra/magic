@@ -30,15 +30,15 @@ import {MgPasswordComponent} from './form/password.component';
 import {MgInputDetailComponent} from './form/input-detail.component';
 import {MgMapComponent} from './map/map.component';
 import {MgGoogleMapComponent} from './map/google-map.component';
-import {MgNavComponent} from './navbar/nav.component';
-import {MgNavBarComponent} from './navbar/navbar.component';
-import {MgNavBlockComponent} from './navbar/nav-block.component';
+// import {MgNavComponent} from './navbar/nav.component';
+// import {MgNavBarComponent} from './navbar/navbar.component';
+// import {MgNavBlockComponent} from './navbar/nav-block.component';
 import {MgSpinnerComponent} from './spinner/spinner.component';
 import {MgInfoBoxComponent} from './infobox/infobox.component';
 import {MgEditableDirective} from './form/editable.directive';
-import {MgClippableComponent} from "./clippable/clippable.component";
-import {MgExpandComponent} from "./expand/expand.component";
-import {MgSidebarComponent} from "./sidebar/sidebar.component";
+import {MgClippableComponent} from './clippable/clippable.component';
+import {MgExpandComponent} from './expand/expand.component';
+import {MgSidebarComponent} from './sidebar/sidebar.component';
 
 const components = [
   ToolBarComponent,
@@ -67,9 +67,9 @@ const components = [
   MgInputDetailComponent,
   MgMapComponent,
   MgGoogleMapComponent,
-  MgNavComponent,
-  MgNavBarComponent,
-  MgNavBlockComponent,
+  // MgNavComponent,
+  // MgNavBarComponent,
+  // MgNavBlockComponent,
   MgSpinnerComponent,
   MgInfoBoxComponent,
   MgEditableDirective,

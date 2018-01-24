@@ -1,0 +1,10 @@
+<div class="mg-expand">
+  <div class="mg-expand-value">{{value}}</div>
+  <div class="mg-expander" (click)="toggle()">
+    <i class="fa fa-angle-up" *ngIf="!expanded"></i>
+    <i class="fa fa-angle-down" *ngIf="expanded"></i>
+  </div>
+</div>
+<div class="mg-expand-content" *ngIf="expanded">
+  <ng-content></ng-content>
+</div>

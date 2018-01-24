@@ -1,0 +1,84 @@
+.mg-carousel-slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+}
+.mg-carousel-slide.hidden {
+  opacity: 0;
+}
+.mg-carousel-slide.showing {
+  opacity: 1;
+}
+.mg-carousel-slide.fadein {
+  opacity: 1;
+  animation: mg-carousel-slide-fade-in 2s;
+}
+.mg-carousel-slide.fadeout {
+  opacity: 0;
+  animation: mg-carousel-slide-fade-out 2s;
+}
+@-moz-keyframes mg-carousel-slide-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes mg-carousel-slide-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes mg-carousel-slide-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mg-carousel-slide-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mg-carousel-slide-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes mg-carousel-slide-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes mg-carousel-slide-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mg-carousel-slide-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

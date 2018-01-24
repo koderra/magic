@@ -1,0 +1,6 @@
+<div class="mg-tab-bar">
+  <div class="mg-tab-button" *ngFor="let tab of tabs" (click)="select(tab)" [ngClass]="{'active': tab.active}">
+    {{tab.title}}
+  </div>
+  <ng-content></ng-content>
+</div>

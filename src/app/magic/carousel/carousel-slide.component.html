@@ -1,0 +1,7 @@
+<div class="mg-carousel-slide"
+     [ngClass]="{
+        'showing': cover,
+        'fadein': visible && !cover,
+        'fadeout': !visible && !cover}">
+  <ng-content></ng-content>
+</div>

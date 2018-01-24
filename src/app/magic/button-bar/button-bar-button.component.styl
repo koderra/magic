@@ -1,0 +1,27 @@
+@import "defaults"
+
+.mg-button-bar-button
+  width $mg-button-bar-button-width
+  height $mg-button-bar-button-height
+  color $mg-button-bar-button-color
+  background-color $mg-button-bar-button-background-color
+  margin-left 5px
+  margin-top 3px
+  text-align: center
+  vertical-align: middle
+  line-height: $mg-button-bar-button-height
+  display block
+  float left
+  padding 1px
+
+.mg-button-bar-button.active
+  color $active-mg-button-bar-button-color
+  background-color $active-mg-button-bar-button-background-color
+
+.mg-button-bar-button:hover
+  cursor pointer
+  background-color $mg-button-bar-button-background-color-hover
+
+.mg-button-bar-button:hover.active
+  background-color $active-mg-button-bar-button-background-color-hover
+  color: $active-mg-button-bar-button-color-hover

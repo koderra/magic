@@ -1,0 +1,72 @@
+.mg-input {
+  width: 100%;
+  height: 30px;
+  display: block;
+  float: left;
+}
+.mg-input .decorator {
+  background: '';
+  width: 20px;
+  height: calc(100% - 2 * 1px);
+  position: relative;
+  top: calc(-100% - 4 * 1px);
+  text-align: center;
+  line-height: 28px;
+  color: #808080;
+}
+.mg-input .activator {
+  display: block;
+  float: right;
+  background: '';
+  width: 20px;
+  height: calc(100% - 2 * 1px);
+  position: relative;
+  top: calc(-200% - 2 * 1px);
+  text-align: center;
+  line-height: 28px;
+  color: #808080;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+}
+.mg-input .activator:hover {
+  background: #9acd32;
+  color: #fff;
+}
+.mg-input > input {
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+  background: #fff;
+  border: 1px solid #eee;
+  color: #333;
+}
+.mg-input .decorated {
+  padding-left: 20px;
+  width: calc(100% - 22px);
+}
+.mg-input :disabled {
+  background-color: #eee;
+}
+.mg-input :focus {
+  border: 1px solid #555;
+}
+.mg-input ::placeholder {
+  color: #ddd;
+}
+.mg-input .options {
+  position: relative;
+  top: calc(-100% - 3 * 1px);
+  width: calc(100% - 1px);
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+  background: #fafafa;
+}
+.mg-input .options .option {
+  height: 20px;
+  line-height: 20px;
+  padding: 5px;
+}
+.mg-input .options :hover {
+  background: #eee;
+  cursor: pointer;
+}

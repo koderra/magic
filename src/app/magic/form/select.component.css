@@ -1,0 +1,22 @@
+.mg-selectx {
+  width: 100%;
+}
+.mg-selectx .mg-select-options {
+  position: fixed;
+  z-index: 100;
+  background: #fafafa;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  line-height: 30px;
+  cursor: pointer;
+}
+.mg-selectx .mg-select-options > div {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-botton: 2px;
+}
+.mg-selectx .mg-select-options :hover {
+  background: #eee;
+}

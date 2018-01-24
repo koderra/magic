@@ -1,0 +1,55 @@
+.mg-input {
+  width: calc(100% - 2 * 1px);
+  height: 30px;
+  background: #fff;
+  border: 1px solid #eee;
+  color: #333;
+}
+.mg-input .decorator {
+  display: block;
+  float: left;
+  position: relative;
+  text-align: center;
+  color: #808080;
+  background: '';
+  width: 20px;
+  height: 100%;
+  line-height: 30px;
+}
+.mg-input .activator {
+  display: block;
+  float: right;
+  background: '';
+  width: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: #808080;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+}
+.mg-input > input {
+  height: calc(100% - 2 * 1px);
+  display: block;
+  float: left;
+  border: 0;
+  padding-left: 5px;
+  width: calc(100% - 1px - 5px);
+}
+.mg-input .has-activator {
+  width: calc(100% - 20px);
+}
+.mg-input .has-decorator {
+  padding-left: 0;
+  width: calc(100% - 20px);
+}
+.mg-input .has-ad {
+  padding-left: 0;
+  width: calc(100% - 47px);
+}
+.mg-input .activator:hover {
+  background: #9acd32;
+  color: #fff;
+}
+.mg-input.focused {
+  border: 1px solid #555;
+}

@@ -1,0 +1,21 @@
+<div class="mg-input">
+  <input [placeholder]="placeholder" [type]="type || 'text'" [(ngModel)]="value" [ngClass]="{'decorated': decorator}"/>
+  <div class="decorator" *ngIf="decorator">
+    <i class="fa" [ngClass]="decorator"></i>
+  </div>
+  <!--<div class="sync">-->
+  <!--<i class="fa fa-circle-o-notch"></i>-->
+  <!--</div>-->
+  <!--<div class="validator">-->
+  <!--<i class="fa fa-circle"></i>-->
+  <!--</div>-->
+  <div class="activator" *ngIf="activator" (click)="activate()">
+    <i class="fa" [ngClass]="activatorStyle"></i>
+  </div>
+  <div class="options" *ngIf="optionsVisible">
+    <div class="option">Hello</div>
+    <div class="option">World</div>
+    <div class="option">How are you</div>
+    <div class="option">Today</div>
+  </div>
+</div>

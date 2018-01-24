@@ -1,0 +1,119 @@
+mg-select-height = 30px
+
+mg-input-border-color = #eeeeee
+mg-input-border = 1px solid mg-input-border-color
+mg-input-active-border = 1px solid #555555
+mg-input-background = white
+mg-input-placeholder-color = #dddddd
+mg-input-text-color = #333333
+
+// disabled
+mg-input-disabled-background = #eeeeee
+
+// decorator
+mg-input-decorator-background = ''
+mg-input-decorator-color = grey
+mg-input-decorator-width = 20px
+
+// activator
+mg-input-activator-width = 20px
+mg-input-activator-separator = 1px solid mg-input-border-color
+mg-input-activator-background = ''
+mg-input-activator-hover-background = yellowgreen
+mg-input-activator-hover-color = white
+
+// calcualed
+mg-input-line-height-offset = mg-input-height - 2 * mg-input-border
+mg-input-decorator-width-offset = mg-input-decorator-width + 2 * mg-input-border
+
+.mg-input-detail
+  width 100%
+
+  .detail
+    background #fafafa
+    border 1px solid #eeeeee
+    //border-top 1px solid green
+    //border-left 1px solid #eeeeee
+    //border-right 1px solid #eeeeee
+    //border-bottom 1px solid #eeeeee
+
+    .push
+      //position relative
+      top -10px
+
+    .hover
+      position fixed
+      z-index 100
+
+
+
+
+
+  //.decorator
+  //  background mg-input-decorator-background
+  //  width mg-input-decorator-width
+  //  height "calc(100% - 2 * %s)" % mg-input-border
+  //  position relative
+  //  top "calc(-100% - 4 * %s)" % mg-input-border
+  //  text-align center
+  //  line-height mg-input-line-height-offset //calc(30px - 2px)
+  //  color mg-input-decorator-color
+  //
+  //.activator
+  //  display block
+  //  float right
+  //  background mg-input-activator-background
+  //  width mg-input-activator-width
+  //  height "calc(100% - 2 * %s)" % mg-input-border
+  //  position relative
+  //  top "calc(-200% - 2 * %s)" % mg-input-border
+  //  //top -200%
+  //  text-align center
+  //  line-height mg-input-line-height-offset //calc(30px - 2px)
+  //  color mg-input-decorator-color
+  //  cursor pointer
+  //  border-left mg-input-activator-separator
+  //
+  //.activator:hover
+  //  background mg-input-activator-hover-background
+  //  color mg-input-activator-hover-color
+  //
+  //> input
+  //  height calc(100% - 4px)
+  //  width calc(100% - 4px)
+  //  background mg-input-background
+  //  border mg-input-border
+  //  color mg-input-text-color
+  //
+  //.decorated
+  //  padding-left mg-input-decorator-width
+  //  width "calc(100% - %s)" % mg-input-decorator-width-offset
+  //
+  //:disabled
+  //  background-color mg-input-disabled-background
+  //
+  //:focus
+  //  border mg-input-active-border
+  //
+  //::placeholder
+  //  color mg-input-placeholder-color
+  //
+  //.options
+  //  position relative
+  //  //left 0px
+  //  top "calc(-100% - 3 * %s)" % mg-input-border
+  //  width calc(100% - 1px)
+  //  //width 100%
+  //  border-left 1px solid grey
+  //  border-bottom 1px solid grey
+  //  border-right 1px solid grey
+  //  background #fafafa
+  //
+  //  .option
+  //    height 20px
+  //    line-height 20px
+  //    padding 5px
+  //
+  //  :hover
+  //    background #eeeeee
+  //    cursor pointer

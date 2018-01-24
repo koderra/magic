@@ -1,0 +1,22 @@
+.mg-select {
+  height: 3em;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #f00;
+}
+.mg-select select {
+  width: 100%;
+}
+.mg-select {
+  height: 3em;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #f00;
+}
+.mg-select select {
+  width: 100%;
+}

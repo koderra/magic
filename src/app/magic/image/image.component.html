@@ -1,0 +1,13 @@
+<div [ngStyle]="{'background-image': 'url(' + activeImage +')', 'display': 'block'}"
+     [ngClass]="{'mg-img-drag': state === 'drag', 'mg-img': mode !== 'round', 'mg-img-round': mode === 'round'}">
+  <!--<mg-spinner *ngIf="busy && spinnerSize === 0" [mode]="spinnerMode" [size]="spinnerSize"></mg-spinner>-->
+  <!--<mg-spinner *ngIf="busy && spinnerSize > 0" [mode]="spinnerMode" [size]="spinnerSize"-->
+  <!--[ngStyle]="{'padding-top': 'calc(100% / 2 - 33px)'}"></mg-spinner>-->
+  <mg-spinner *ngIf="busy && spinnerSize === 0" [mode]="spinnerMode" [size]="spinnerSize"></mg-spinner>
+  <mg-spinner *ngIf="busy && spinnerSize > 0" [mode]="spinnerMode" [size]="spinnerSize"
+              [ngStyle]="{'width': spinnerSize,
+              height: spinnerSize,
+              position: 'relative',
+              top: 'calc(100% / 2 - ('+ spinnerSize+'px / 2))'
+              }"></mg-spinner>
+</div>

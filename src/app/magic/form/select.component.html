@@ -1,0 +1,11 @@
+<div class="mg-selectx">
+  <mg-input [placeholder]="placeholder"
+            [(ngModel)]="displayText"
+            [decorator]="decorator"
+            activatorStyle="fa-caret-down"
+            (activated)="activated()">
+  </mg-input>
+  <div class="mg-select-options" *ngIf="optionsVisible">
+    <div class="option" *ngFor="let name of optionNames" (click)="select(name)">{{options[name]}}</div>
+  </div>
+</div>

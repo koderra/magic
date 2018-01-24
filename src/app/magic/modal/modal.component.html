@@ -1,0 +1,15 @@
+<mg-basic-modal>
+  <div class="mg-modal-header">
+    <div class="title">{{title}}</div>
+  </div>
+  <div class="mg-modal-body">
+    <ng-content></ng-content>
+  </div>
+  <div class="mg-modal-footer">
+    <mg-button [class]="alt1.style" *ngIf="onAlt1" (click)="onAlt1()">{{alt1.text}}</mg-button>
+    <mg-button [class]="alt2.style" *ngIf="onAlt2" (click)="onAlt2()">{{alt2.text}}</mg-button>
+    <mg-button [class]="alt3.style" *ngIf="onAlt3" (click)="onAlt3()">{{alt3.text}}</mg-button>
+    <mg-button [class]="ok.style" *ngIf="onOk" (click)="onOk()">{{ok.text}}</mg-button>
+    <mg-button [class]="cancel.style" (click)="onCancel()">{{cancel.text}}</mg-button>
+  </div>
+</mg-basic-modal>

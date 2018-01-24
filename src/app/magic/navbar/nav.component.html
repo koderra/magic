@@ -1,0 +1,5 @@
+<div class="mg-nav" *ngIf="enabled" (click)="clicked()">
+  <a [routerLink]="navigate" [ngClass]="{'active': active}">
+    <ng-content></ng-content>
+  </a>
+</div>

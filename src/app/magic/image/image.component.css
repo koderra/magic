@@ -1,0 +1,25 @@
+.mg-img-round {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+}
+.mg-img-round mg-spinner {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.mg-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mg-img mg-spinner {
+  display: block;
+}

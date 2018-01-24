@@ -1,0 +1,19 @@
+.mg-expand {
+  width: 100%;
+}
+.mg-expand .mg-expand-value {
+  display: block;
+  float: left;
+  width: calc(100% - 30px);
+}
+.mg-expand .mg-expander {
+  display: block;
+  float: right;
+  width: $mg-expand-button-size;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.mg-expand .mg-expander:hover {
+  background: #f0f0f0;
+}

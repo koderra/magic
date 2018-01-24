@@ -1,0 +1,35 @@
+mg-tab-color = #fafafa
+mg-tab-color-active = #eeeeee
+mg-tab-underline = 2px solid #f0f0f0
+mg-tab-underline-hover = 2px solid #dddddd
+mg-tab-underline-active = 2px solid #3ba2d8
+
+.mg-tab-bar
+  display block
+  height 31px
+  width 100%
+  //background-color #3ba2d8
+  border-bottom 1px solid mg-tab-border-color
+
+  .mg-tab-button
+    height 30px
+    line-height 30px
+    display block
+    float left
+    padding-left 10px
+    padding-right 10px
+    border-bottom mg-tab-underline
+    cursor pointer
+    min-width 50px
+    text-align center
+
+    &:hover
+      border-bottom mg-tab-underline-hover
+
+  .active
+    background-color mg-tab-color-active
+    border-bottom mg-tab-underline-active
+
+    &:hover
+      border-bottom mg-tab-underline-active
+

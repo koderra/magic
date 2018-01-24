@@ -1,0 +1,119 @@
+@import "../defaults"
+
+$button-border := 1px solid
+$button-side-padding := 20px
+$button-border-radius := 0px
+
+// Base
+$button-color-base := $color-base
+$button-color-base-dark := $color-base-dark
+$button-color-base-reverse := $color-base-reverse
+$button-color-base-active := $button-color-base-dark
+$button-color-base-hover := darken($button-color-base, 5%)
+$button-color-base-border := $button-color-base-dark
+$button-base-border := $button-border $button-color-base-border
+
+// Default
+$button-color-default-reverse := $color-default-reverse
+$button-color-default-dark := $color-default-dark
+$button-color-default := $color-default
+$button-color-default-border := $button-color-default-dark
+$button-color-default-hover := darken($button-color-default, 5%)
+$button-default-border := $button-border $button-color-default-border
+
+// Danger
+$button-color-danger-reverse := $color-danger-reverse
+$button-color-danger-dark := $color-danger-dark
+$button-color-danger := $color-danger
+$button-color-danger-border := $button-color-danger-dark
+$button-color-danger-hover := darken($button-color-danger, 5%)
+$button-danger-border := $button-border $button-color-danger-border
+
+
+
+@keyframes mg-button-background-animation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 60px 30px;
+  }
+}
+
+.mg-button
+  background-color $button-color-base
+  border $button-base-border
+  font-weight 400
+  color $button-color-base-reverse
+  height 2.5em
+  padding-left $button-side-padding
+  padding-right $button-side-padding
+  border-radius $button-border-radius
+
+.mg-button:disabled
+  //background $button-color-base-active
+  background-size: 30px 30px;
+  background-image: linear-gradient(45deg, rgba(230, 230, 230, 0.1) 25%, transparent 25%, transparent 50%, rgba(230, 230, 230, 0.1) 50%, rgba(230, 230, 230, 0.1) 75%, transparent 75%, transparent);
+  animation: mg-button-background-animation 0.5s linear infinite;
+
+.mg-button:enabled
+  cursor pointer
+
+.mg-button:hover:enabled
+  background $button-color-base-hover
+
+.mg-button:active:enabled
+  background-color $button-color-base-active
+
+  &.processing
+    background-color $color-default-lightest
+    border $button-default-border
+
+// Default button
+
+mg-button.default .mg-button
+  background-color $button-color-default
+  color $button-color-default-reverse
+  border 1px solid $button-default-border
+
+mg-button.default .mg-button:hover:enabled
+  background $button-color-default-hover
+
+mg-button.default .mg-button:active:enabled
+  background-color $button-color-default-dark
+
+
+// Danger button
+
+mg-button.danger .mg-button
+  background-color $color-danger
+  color $button-color-danger-reverse
+  border 1px solid $color-danger-dark
+
+mg-button.danger .mg-button:hover:enabled
+  background $button-color-danger-hover
+
+mg-button.danger .mg-button:active:enabled
+  background-color $color-danger-dark
+
+mg-button.danger .mg-button:disabled
+  background $button-color-danger-active
+
+
+// Success button
+
+mg-button.success .mg-button
+  background-color $color-success
+  border 1px solid $color-success-dark
+
+mg-button.success .mg-button:active:enabled
+  background-color $color-success-dark
+
+
+// Warning button
+mg-button.warning .mg-button
+  background-color $color-warning
+  border 1px solid $color-warning-dark
+
+mg-button.warning .mg-button:active:enabled
+  background-color $color-warning-dark

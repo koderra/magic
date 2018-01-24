@@ -1,0 +1,46 @@
+@import "defaults"
+
+$mg-spinner-size = 100%
+$mg-spinner-color = $color-base-lightest
+$mg-spinner-accent-color = $color-default
+
+$mg-spinner-thick-line-size = 12px
+$mg-spinner-medium-line-size = 6px
+$mg-spinner-thin-line-size = 1px
+
+.mg-spinner
+  display block
+  border-radius: 50%
+  position relative
+  animation: mg-spinner-spin 1s linear infinite
+
+.mg-spinner.thick
+  border: $mg-spinner-thick-line-size solid $mg-spinner-color
+  border-top: $mg-spinner-thick-line-size solid $mg-spinner-accent-color
+  height: "calc(100% - %s * 2)" % $mg-spinner-thick-line-size
+  width: "calc(100% - %s * 2)" % $mg-spinner-thick-line-size
+  top: "calc(-1 * %s)" % $mg-spinner-thick-line-size
+
+.mg-spinner.medium
+  border: $mg-spinner-medium-line-size solid $mg-spinner-color
+  border-top: $mg-spinner-medium-line-size solid $mg-spinner-accent-color
+  height: "calc(100% - %s * 2)" % $mg-spinner-medium-line-size
+  width: "calc(100% - %s * 2)" % $mg-spinner-medium-line-size
+  top: "calc(-1 * %s)" % $mg-spinner-medium-line-size
+
+.mg-spinner.thin
+  border: $mg-spinner-thin-line-size solid $mg-spinner-color
+  border-top: $mg-spinner-thin-line-size solid $mg-spinner-accent-color
+  height: "calc(100% - %s * 2)" % $mg-spinner-thin-line-size
+  width: "calc(100% - %s * 2)" % $mg-spinner-thin-line-size
+  top: "calc(-1 * %s)" % $mg-spinner-thin-line-size
+
+@keyframes mg-spinner-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

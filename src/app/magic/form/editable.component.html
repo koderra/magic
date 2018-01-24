@@ -1,0 +1,15 @@
+<div class="mg-editable">
+  <div mg
+       [editable]="editable"
+       [(ngModel)]="text"
+       [placeholder]="placeholder"
+       ngDefaultControl
+       (focus)="activate()"
+       (blur)="deactivate()">
+  </div>
+  <div class="tools" [ngClass]="{'hidden': !active}">
+    <div class="button" (click)="commit()"><i class="fa fa-check"></i></div>
+    <div class="button" (click)="undo()"><i class="fa fa-undo"></i></div>
+    <div class="button" (click)="remove()"><i class="fa fa-times"></i></div>
+  </div>
+</div>

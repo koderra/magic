@@ -1,0 +1,19 @@
+<div class="mg-input" [ngClass]="{'focused': focused}">
+  <div class="decorator" *ngIf="decorator">
+    <i class="fa" [ngClass]="decorator"></i>
+  </div>
+  <input [placeholder]="placeholder" type="text"
+         (focus)="focus(true)"
+         (focusout)="focus(false)"
+         [(ngModel)]="value"
+         [ngClass]="{'has-ad': decorator}"/>
+  <!--<div class="sync">-->
+  <!--<i class="fa fa-circle-o-notch"></i>-->
+  <!--</div>-->
+  <!--<div class="validator">-->
+  <!--<i class="fa fa-circle"></i>-->
+  <!--</div>-->
+  <div class="activator" *ngIf="activatorEnabled" (click)="activate()">
+    <i class="fa" [ngClass]="activatorStyle"></i>
+  </div>
+</div>

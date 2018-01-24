@@ -1,0 +1,14 @@
+.mg-input-detail {
+  width: 100%;
+}
+.mg-input-detail .detail {
+  background: #fafafa;
+  border: 1px solid #eee;
+}
+.mg-input-detail .detail .push {
+  top: -10px;
+}
+.mg-input-detail .detail .hover {
+  position: fixed;
+  z-index: 100;
+}

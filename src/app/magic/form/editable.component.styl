@@ -1,0 +1,33 @@
+@import "defaults"
+
+$editable-color-edit-bg = $color-base-light
+$editable-color-edit = $color-base-reverse
+
+.mg-editable
+  height 100%
+  width 100%
+
+  > div[contenteditable=true]
+    background $editable-color-edit-bg
+
+  .tools
+    display block
+    float right
+
+    .button
+      display block
+      float left
+      padding 3px
+      background $editable-color-edit-bg
+      cursor pointer
+      color white
+
+      &:hover
+        color $editable-color-edit
+
+  .tools.hidden
+    display none
+
+  .tools.hidden:hover
+    background $editable-color-edit-bg
+    display block

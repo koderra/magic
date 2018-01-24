@@ -1,0 +1,19 @@
+{
+  "name": "magic",
+  "version": "1.0.0",
+  "description": "Angular UI component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koderra/magic.git"
+  },
+  "author": "Koderra <info@koderra.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koderra/magic/issues"
+  },
+  "homepage": "https://github.com/koderra/magic#readme"
+}

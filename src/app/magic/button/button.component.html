@@ -1,0 +1,4 @@
+<button class="mg-button" (click)="buttonClicked()" [disabled]="processing">
+  <i class="fa fa-circle-o-notch fa-spin" *ngIf="processing"></i>
+  <ng-content></ng-content>
+</button>

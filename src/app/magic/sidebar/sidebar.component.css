@@ -1,0 +1,27 @@
+.mg-info-box {
+  display: block;
+  width: calc(100% - 24px);
+  padding: 10px;
+  background-color: $color-base;
+  border: 2px solid $color-base-dark;
+  color: $color-base-reverse;
+}
+.mg-info-box.warning {
+  background-color: $color-warning;
+  border: 2px solid $color-warning-dark;
+  color: $color-warning-reverse;
+}
+.mg-info-box.danger {
+  background-color: $color-danger;
+  border: 2px solid $color-danger-dark;
+  color: $color-danger-reverse;
+}
+.mg-info-box.highlight {
+  background-color: $color-highlight;
+  border: 2px solid $color-highlight-dark;
+}
+.mg-info-box.alert {
+  background-color: $color-alert;
+  border: 2px solid $color-alert-dark;
+  color: $color-alert-reverse;
+}

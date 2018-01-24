@@ -1,0 +1,24 @@
+default-modal-height = 400px
+default-modal-width = 600px
+
+.mg-modal-view.active
+  position fixed
+  top 0
+  left: 0
+  width 100%
+  height 100%
+  background rgba(0,0,0,0.8)
+  z-index 99999
+  opacity 50%
+  display tabble
+
+  > div
+    display block
+    vertical-align middle
+    background-color white
+    height default-modal-height
+    width default-modal-width
+    position relative
+    left "calc(50% - %s)" % (default-modal-width / 2)
+    top 100px
+    //margin auto

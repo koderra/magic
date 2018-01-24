@@ -1,0 +1,9 @@
+<div class="mg-gallery" [ngClass]="{'mg-gallery-drag': state === 'drag'}">
+  <mg-img *ngFor="let image of images"
+          [src]="image"
+          autoUpload="true"
+          loading="/assets/images/loading.png"
+          error="/assets/images/error.png"
+          [onUploaded]="imageUploadCallback"
+          default="/assets/images/default.png"></mg-img>
+</div>
